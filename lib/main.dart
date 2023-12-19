@@ -37,54 +37,53 @@ class MainApp extends StatelessWidget {
                       fontFamily: "SourceSans3",
                       letterSpacing: 2.5),
                 ),
-                Container(
-                  color: Colors.white,
-                  margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                  padding: const EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.phone,
-                        size: 30.0,
-                        color: Colors.teal,
-                      ),
-                      const SizedBox(
-                        width: 20,
-                      ),
-                      Text(
-                        "(85) 99742-1367",
-                        style: TextStyle(
-                            fontFamily: 'SourceSans3',
-                            color: Colors.teal.shade900,
-                            fontSize: 20.0),
-                      )
-                    ],
+                SizedBox(
+                  height: 20,
+                  width: 200,
+                  child: Divider(
+                    color: Colors.teal[100],
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                  padding: const EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.mail,
-                        size: 30.0,
-                        color: Colors.teal,
+                Card(
+                  margin:
+                  const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.phone,
+                      size: 30,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      "(85) 99742-1367",
+                      style: TextStyle(
+                          fontFamily: 'SourceSans3',
+                          color: Colors.teal.shade900,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0
                       ),
-                      const SizedBox(
-                        width: 20,
-                      ),
-                      Text(
-                        "lucasrossy270@gmail.com",
-                        style: TextStyle(
-                            fontFamily: 'SourceSans3',
-                            color: Colors.teal.shade900,
-                            fontSize: 20.0),
-                      )
-                    ],
+                    ),
                   ),
                 ),
+                Card(
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.mail,
+                      size: 30,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      "lucasrossy270@gmail.com",
+                      style: TextStyle(
+                          fontFamily: 'SourceSans3',
+                          color: Colors.teal.shade900,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           )),
